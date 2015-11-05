@@ -1,0 +1,16 @@
+{
+  "name": "LambdaBasic",
+  "version": "0.0.0",
+  "description": "Template for an AWS Lambda ",
+  "main": "_testdriver.js",
+  "dependencies": {
+    "aws-sdk": "~2.1.8",
+    "async": "~1.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
