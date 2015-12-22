@@ -10,7 +10,7 @@
  */
 
 // Set the region to the locations of the S3 buckets
-process.env['AWS_REGION'] = 'us-west-2'
+process.env['AWS_REGION'] = 'us-east-1'
 
 var fs = require('fs');
 var app = require('./app');
@@ -23,8 +23,10 @@ var context = {};
 context.done = function () {
     console.log("Lambda Function Complete");
 }
-context.succeed = function () {
+context.succeed = function (msg) {
     console.log("Lambda Function Complete");
+    if (msg)
+        console.log(msg);
 }
 
 app.handler(event, context);

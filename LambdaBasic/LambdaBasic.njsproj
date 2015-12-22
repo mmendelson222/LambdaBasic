@@ -38,6 +38,9 @@
     <Compile Include="_testdriver.js" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="lambdabasic.template" />
+    <Content Include="package-s3.sh" />
+    <Content Include="package.bat" />
     <Content Include="_sampleEvent.json" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
